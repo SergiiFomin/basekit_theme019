@@ -1,0 +1,206 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div class="bg-glow">    
+    <div class="global">
+        <!--header-->
+        <header>
+            <div class="header">
+                <div class="container">
+                    <div class="row">
+                        <article class="span12">
+                            <div class="navigation">
+                                <div class="row">
+                                    <article class="span8">
+                                        {{widget('extendednavigation', 'extendednavigation', {"align":"center"})|raw}}
+                                    </article>
+                                    <article class="span4">
+                                        {{widget('profile', 'form', { 'profileType':'form'})|raw}}
+                                    </article>
+                                </div>
+                            </div>
+
+                            {{widget('logo', 'name', {"defaultlogo": asset('images/logo.png')})|raw}}
+                            {{widget('companyname', 'companyname', {"business": "subcontractor"})|raw}}                            
+                            {{widget('space', 'space', {'height': '20'})|raw}}
+
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="showcase">
+            <div class="container">
+                <div class="row">
+                    <article class="span12">
+
+                        {{widget('responsiveslideshow', 'responsiveslideshow', {'duration':'3', 'transSpeed': '1000', 'transType': 'fade', 'showButtons': true, 'showBullets': true, 'allowPause': true, 'allowLoop': true, 'images':[{'imageHeight':'500', 'imageWidth':'1170', 'url':'http://placehold.it/1170x500', 'title':'test title', 'description': 'test desc'},{'imageHeight':'500', 'imageWidth':'1170', 'url':'http://placehold.it/1170x500', 'title':'test title', 'description': 'test desc'},{'imageHeight':'500', 'imageWidth':'1170', 'url':'http://placehold.it/1170x500', 'title':'test title', 'description': 'test desc'},{'imageHeight':'500', 'imageWidth':'1170', 'url':'http://placehold.it/1170x500', 'title':'test title', 'description': 'test desc'}]})|raw}}        
+                        {{widget('space', 'space', {'height': '30'})|raw}}
+
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div class="maintop">
+            <div class="container">
+                <div class="row">
+                    <article class="span12">
+                        <div class="row center">
+                            <article class="span4">
+                                {{widget('content', 'title1', {content: '<h1>planning</h1>', lines: 'all'})|raw}}
+                                {{widget('image', 'aboutimage1', { 'src': asset('images/icon1.png'), 'imageWidth': '83px'})|raw}}
+                                {{widget('content', 'content1', {content: '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor et dolore magna aliqua.</p>', lines: 'all'})|raw}}
+                                {{widget('button', 'button1', {italic: false, text:'More', 'align':'widget-align-center'})|raw}}
+                                {{widget('space', 'space', {'height': '50'})|raw}}
+                            </article>
+                            <article class="span4">
+                                {{widget('content', 'title2', {content: '<h1>analysis</h1>', lines: 'all'})|raw}}
+                                {{widget('image', 'aboutimage2', { 'src': asset('images/icon2.png'), 'imageWidth': '83px'})|raw}}
+                                {{widget('content', 'content2', {content: '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor et dolore magna aliqua.</p>', lines: 'all'})|raw}}
+                                {{widget('button', 'button2', {italic: false, text:'More', 'align':'widget-align-center'})|raw}}
+                                {{widget('space', 'space', {'height': '50'})|raw}}
+                            </article>
+                            <article class="span4">
+                                {{widget('content', 'title3', {content: '<h1>modeling</h1>', lines: 'all'})|raw}}
+                                {{widget('image', 'aboutimage3', { 'src': asset('images/icon3.png'), 'imageWidth': '83px'})|raw}}
+                                {{widget('content', 'content3', {content: '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor et dolore magna aliqua.</p>', lines: 'all'})|raw}}
+                                {{widget('button', 'button3', {italic: false, text:'More', 'align':'widget-align-center'})|raw}}
+                                {{widget('space', 'space', {'height': '50'})|raw}}
+                            </article>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <!--content-->
+        <div class="container">
+            <div class="row">
+                <article class="span12">
+
+                    {{widget('content', 'title4', {content: '<h2><span>related projects</span></h2>', lines: 'all'})|raw}}
+
+                    {{zone('main')|raw}}
+
+                    <div class="row project">
+                        <article class="span3">
+                            {{widget('image', 'proimage1', { 'src': asset('images/page1-img1.jpg'), 'imageWidth': '640px'})|raw}}
+                            {{widget('content', 'procontent1', {content: '<span class="text">Lorem ipsum dolore</span><p>Et aliquipx eato commonsequataute</p>', lines: 'all'})|raw}}
+                            {{widget('button', 'probutton1', {italic: false, text:'details', 'align':'widget-align-left'})|raw}}
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+                        </article>
+                        <article class="span3">
+                            {{widget('image', 'proimage1', { 'src': asset('images/page1-img2.jpg'), 'imageWidth': '640px'})|raw}}
+                            {{widget('content', 'procontent1', {content: '<span class="text">Lorem ipsum dolore</span><p>Et aliquipx eato commonsequataute</p>', lines: 'all'})|raw}}
+                            {{widget('button', 'probutton1', {italic: false, text:'details', 'align':'widget-align-left'})|raw}}
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+                        </article>
+                        <article class="span3">
+                            {{widget('image', 'proimage1', { 'src': asset('images/page1-img3.jpg'), 'imageWidth': '640px'})|raw}}
+                            {{widget('content', 'procontent1', {content: '<span class="text">Lorem ipsum dolore</span><p>Et aliquipx eato commonsequataute</p>', lines: 'all'})|raw}}
+                            {{widget('button', 'probutton1', {italic: false, text:'details', 'align':'widget-align-left'})|raw}}
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+                        </article>
+                        <article class="span3">
+                            {{widget('image', 'proimage1', { 'src': asset('images/page1-img4.jpg'), 'imageWidth': '640px'})|raw}}
+                            {{widget('content', 'procontent1', {content: '<span class="text">Lorem ipsum dolore</span><p>Et aliquipx eato commonsequataute</p>', lines: 'all'})|raw}}
+                            {{widget('button', 'probutton1', {italic: false, text:'details', 'align':'widget-align-left'})|raw}}
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+                        </article>
+                    </div>
+
+                    {{widget('content', 'title5', {content: '<h2 class="border"><span>we think creatively</span></h2>', lines: 'all'})|raw}}
+
+                    <div class="row">
+                        <article class="span4">
+                            <div class="img-title">
+                                {{widget('image', 'image', { 'src': asset('images/img-title1.png'), 'imageWidth': '32px'})|raw}}
+                                {{widget('content', 'content', {content: '<h3><span>Creative</span> ideas</h3>', lines: 'all'})|raw}}
+                            </div>
+                            {{widget('content', 'content', {content: '<p><em>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentiumvoluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non prdent. similiquede sunt in culpaqui officia deserunt mollitia animid est laborum et dolorum fuga. Et harum quidem...</em></p>', lines: 'all'})|raw}}
+                            {{widget('button', 'button', {italic: false, text:'More', 'align':'widget-align-left'})|raw}}
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+                        </article>
+                        <article class="span4">
+                            <div class="img-title">
+                                {{widget('image', 'image', { 'src': asset('images/img-title2.png'), 'imageWidth': '32px'})|raw}}
+                                {{widget('content', 'content', {content: '<h3><span>Planning</span> & analysis</h3>', lines: 'all'})|raw}}
+                            </div>
+                            {{widget('content', 'content', {content: '<p><em>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentiumvoluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non prdent. similiquede sunt in culpaqui officia deserunt mollitia animid est laborum et dolorum fuga. Et harum quidem...</em></p>', lines: 'all'})|raw}}
+                            {{widget('button', 'button', {italic: false, text:'More', 'align':'widget-align-left'})|raw}}
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+                        </article>
+                        <article class="span4">
+                            <div class="img-title">
+                                {{widget('image', 'image', { 'src': asset('images/img-title3.png'), 'imageWidth': '32px'})|raw}}
+                                {{widget('content', 'content', {content: '<h3><span>Unique</span> solutions</h3>', lines: 'all'})|raw}}
+                            </div>
+                            {{widget('content', 'content', {content: '<p><em>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentiumvoluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non prdent. similiquede sunt in culpaqui officia deserunt mollitia animid est laborum et dolorum fuga. Et harum quidem...</em></p>', lines: 'all'})|raw}}
+                            {{widget('button', 'button', {italic: false, text:'More', 'align':'widget-align-left'})|raw}}
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+                        </article>
+                    </div>
+
+                </article>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="container">
+                <div class="row">
+                    <article class="span12">
+                        <div class="row">
+                            <article class="span3">
+                                {{widget('content', 'botcontenttitle1', {content: '<h4>Latest Tweets</h4>', lines: 'all'})|raw}}
+                                {{widget('twitter', 'twitter', {'searchKey': 'basekit', 'searchType': 'templatehelpcom', 'count': '2','refreshTime': '1800000','includeRts': '0'})|raw}}
+                                {{widget('space', 'space', {'height': '30'})|raw}}
+                            </article>
+                            <article class="span3">
+                                {{widget('content', 'botcontenttitle2', {content: '<h4>online support</h4>', lines: 'all'})|raw}}
+                                {{widget('image', 'phone-icone', { 'src': asset('images/phone-icon.png'), 'imageWidth': '41px'})|raw}}
+                                {{widget('profile', 'phone', { 'profileType':'phone', 'phone':'+ 1 800 757 43 92'})|raw}}
+                                {{widget('content', 'botcontenttext1', {content: '<div class="mail">Ask Your questions by e-mail: <a href="mailto:mail@demolink.org">mail@demolink.org</a></div>', lines: 'all'})|raw}}
+                                {{widget('space', 'space', {'height': '30'})|raw}}
+                            </article>
+                            <article class="span3">
+                                {{widget('content', 'botcontenttitle3', {content: '<h4>newsletter</h4>', lines: 'all'})|raw}}
+                                {{widget('content', 'botcontenttext2', {content: '<ul class="list"><li>At vero eos et accusamus et</li><li>Astom odgnissimos ducimus</li><li>Raesentium dolore mode</li><li>Eluptatm deleniti atque modele</li><li>Atias excepturi sintol occaecati</li></ul>', lines: 'all'})|raw}}
+                                {{widget('space', 'space', {'height': '30'})|raw}}
+                            </article>
+                            <article class="span3">
+                                {{widget('content', 'botcontenttitle4', {content: '<h4>newsletter</h4>', lines: 'all'})|raw}}
+                                {{widget('profile', 'form', { 'profileType':'form'})|raw}}
+                                {{widget('space', 'space', {'height': '30'})|raw}}
+                            </article>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <!--footer-->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <section class="span12">
+                        <div class="row">
+                            <article class="span8">
+
+                                {{widget('companyname', 'companyname', {"business": "subco"})|raw}}
+                                {{widget('profile', 'copyright', { 'profileType':'copyright', 'copyright':'&copy Copyright 2013. All rights reserved'})|raw}}
+                                {{widget('space', 'space', {'height': '30'})|raw}}
+
+                            </article>
+                            <article class="span4">
+
+                                {{widget('socialicons', 'socialicons', {'googleplus': 'https://plus.google.com', 'linkedin':'http://www.linkedin.com', 'facebook': 'https://www.facebook.com', 'twitter': 'https://twitter.com', 'youtube': 'https://www.youtube.com', 'rss': '#'})|raw}}
+                                {{widget('space', 'space', {'height': '30'})|raw}}
+
+                            </article>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </footer>
+    </div>    
+</div>
+
+{% endblock %}
