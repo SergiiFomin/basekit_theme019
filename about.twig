@@ -51,14 +51,15 @@
                                 <article class="span3">
                                     {{widget('image', 'image1', { 'src': asset('images/page2-img1.jpg'), 'imageWidth': '768px'})|raw}}
                                     {{widget('image', 'image2', { 'src': asset('images/page2-img2.jpg'), 'imageWidth': '768px'})|raw}}
-                                    {{widget('space', 'space', {'height': '50'})|raw}}
                                 </article>
                                 <article class="span3">
                                     {{widget('image', 'image3', { 'src': asset('images/page2-img3.jpg'), 'imageWidth': '768px'})|raw}}
                                     {{widget('image', 'image4', { 'src': asset('images/page2-img4.jpg'), 'imageWidth': '768px'})|raw}}
-                                    {{widget('space', 'space', {'height': '50'})|raw}}
                                 </article>
                             </div>
+                            
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+                            
                         </article>
                     </div>
 
@@ -79,7 +80,7 @@
                                     {{widget('space', 'space', {'height': '50'})|raw}}
                                 </article>
                                 <article class="span2">
-                                    {{widget('content', 'text5', {content: '<ul class="list"><li>Sara Adams</li>li>Lora Lopes</li><li>Gloria Mann</li><li>Inga North</li><li>Ivana Wong</li></ul>', lines: 'all'})|raw}}
+                                    {{widget('content', 'text5', {content: '<ul class="list"><li>Sara Adams</li><li>Lora Lopes</li><li>Gloria Mann</li><li>Inga North</li><li>Ivana Wong</li></ul>', lines: 'all'})|raw}}
                                     {{widget('space', 'space', {'height': '50'})|raw}}
                                 </article>
                             </div>
@@ -89,19 +90,19 @@
                                 <article class="span2">
                                     {{widget('image', 'staffimage1', { 'src': asset('images/team-img1.jpg'), 'imageWidth': '440px'})|raw}}
                                     {{widget('image', 'staffimage2', { 'src': asset('images/team-img2.jpg'), 'imageWidth': '440px'})|raw}}
-                                    {{widget('space', 'space', {'height': '50'})|raw}}
                                 </article>
                                 <article class="span2">
                                     {{widget('image', 'staffimage3', { 'src': asset('images/team-img3.jpg'), 'imageWidth': '440px'})|raw}}
                                     {{widget('image', 'staffimage4', { 'src': asset('images/team-img4.jpg'), 'imageWidth': '440px'})|raw}}
-                                    {{widget('space', 'space', {'height': '50'})|raw}}
                                 </article>
                                 <article class="span2">
                                     {{widget('image', 'staffimage5', { 'src': asset('images/team-img5.jpg'), 'imageWidth': '440px'})|raw}}
                                     {{widget('image', 'staffimage6', { 'src': asset('images/team-img6.jpg'), 'imageWidth': '440px'})|raw}}
-                                    {{widget('space', 'space', {'height': '50'})|raw}}
                                 </article>
                             </div>
+                            
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+
                         </article>
                     </div>
 
@@ -139,14 +140,14 @@
                 <div class="row">
                     <section class="span12">
                         <div class="row">
-                            <article class="span8">
+                            <article class="span6">
 
                                 {{widget('companyname', 'companyname', {"business": "subco"})|raw}}
                                 {{widget('profile', 'copyright', { 'profileType':'copyright', 'copyright':'&copy Copyright 2013. All rights reserved'})|raw}}
                                 {{widget('space', 'space', {'height': '30'})|raw}}
 
                             </article>
-                            <article class="span4">
+                            <article class="span6">
 
                                 {{widget('socialicons', 'socialicons', {'googleplus': 'https://plus.google.com', 'linkedin':'http://www.linkedin.com', 'facebook': 'https://www.facebook.com', 'twitter': 'https://twitter.com', 'youtube': 'https://www.youtube.com', 'rss': '#'})|raw}}
                                 {{widget('space', 'space', {'height': '30'})|raw}}
